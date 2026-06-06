@@ -5,9 +5,6 @@
  * API specification for Satya's Portfolio
  * OpenAPI spec version: 0.1.0
  */
-export interface HealthStatus {
-  status: string;
-}
 
 export interface Project {
   id: number;
@@ -22,25 +19,3 @@ export interface Project {
   imageUrl: string | null;
   createdAt: string;
 }
-
-export interface ContactInput {
-  /** @minLength 1 */
-  name: string;
-  /** @minLength 1 */
-  email: string;
-  /** @minLength 1 */
-  message: string;
-}
-
-export interface ContactMessage {
-  id: number;
-  name: string;
-  email: string;
-  message: string;
-  createdAt: string;
-}
-
-export interface ErrorResponse {
-  error: string;
-}
-
